@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myCounter</title>
+    <style>
+        * {
+            margin:0;
+        }
+        body {
+            background-color:rgb(234, 241, 248);
+        }
+        .container {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height:100vh;
+            gap:40px;
+        }
+        .title {
+            color:rgb(53, 63, 92);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 64px;
+        }
+        .counter {
+            font-size:80px;
+            font-family:Arial, Helvetica, sans-serif;
+            color:rgb(25, 102, 25);
+        }
+        .btn {
+            margin: 5px;
+            border:2px solid rgba(0, 0, 0, 0.808);
+            outline:none;
+            cursor:pointer;
+            background: #0000;
+            border-radius:5px;
+            font-size:18px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 1.5px;
+            color:rgba(0, 0, 0, 0.808);
+            padding:4px 14px;
+            transition:border-color 0.3s ease-in-out;
+        }
+        .btn:is(:hover, :focus) {
+            border-color:rgb(28, 79, 189)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            Counter
+        </h1>
+        <div class="counter" id="counter">
+            0
+        </div>
+        <div class="btn-container">
+            <button class="btn dec">
+                DECREASE
+            </button>
+            <button class="btn res">
+                RESET 
+            </button>
+            <button class="btn inc">
+                INCREASE
+            </button>
+        </div>
+        <script src="counter.js"></script>
+    </div>
+</body>
+</html>
